@@ -56,7 +56,7 @@ fun main(array: Array<String>) {
 
     //반복하는 방법(8)
     for (i in a.size - 1 downTo (0))
-        // 8부터 0까지 반복
+    // 8부터 0까지 반복
         println(a.get(i))
 
     println()
@@ -70,5 +70,25 @@ fun main(array: Array<String>) {
     // 반복하는 방법(10)
     for (i in 0..10) {
         println(i)
+        // .. -> 마지막을 포함한다.
+
+        // 반복하는 방법(11)
+        var b = 0
+        var c = 4
+
+        while (b < c) {
+            b++ // while 문을 정지 시키기 위한 코드
+            println("b")
+        }
     }
+    println()
+    // 반복하는 방법 (12) do while은 while문의 조건이 성립되지 않아도 do 안에 있는 코드 한번은 실행시킴
+    var d: Int = 0
+    var e: Int = 4
+
+    do {
+        println("hello")
+        d++
+    } while (d < e)
+
 }
