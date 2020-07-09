@@ -4,7 +4,6 @@
 두번째 list에는 첫번째 List의 값을 하나씩 확인한 후
 짝수면 True 홀수면 False를 넣어준다.
 
-
 // 2번 문제
 학점을 구하자
 80 - 90 -> A
@@ -19,3 +18,27 @@
 // 4번 문제(도전)
 구구단을 출력하자.
  */
+
+// 1번 문제
+
+fun main(array: Array<String>) {
+    val first = mutableListOf<Int>()
+    for (a in 0..9 ) {
+        first.add(a)
+
+    }
+    println(first)
+
+    val second = mutableListOf<Boolean>()
+ 
+
+
+
+
+
+    println(second)
+
+
+}
+
+
