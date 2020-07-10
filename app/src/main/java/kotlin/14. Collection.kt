@@ -16,8 +16,8 @@ fun main(array: Array<String>) {
     // -> 순서가 없다!!! 즉 인덱스가 없
     val numberSet = setOf<Int>(1, 2, 3, 3, 3)
     println()
-    numberSet.forEach {
-        println(it)
+    numberSet.forEach { i ->
+        println(i)
     }
 
 
