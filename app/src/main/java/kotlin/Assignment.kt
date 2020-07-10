@@ -27,21 +27,28 @@ fun main(array: Array<String>) {
     first()
     second()
     third()
+    fourth()
 }
 
 
 fun first() {
     val list1 = MutableList(9, { 0 })
-    val list2 = MutableList(9, {true})
+    val list2 = MutableList(9, { true })
 
     for (i in 1..9) {
         list1[i - 1] = i
     }
 
-
-
     println(list1)
 
+    list1.forEachIndexed { index, value ->
+        if (value % 2 == 0) {
+            list2[index] = true
+        } else {
+            list2[index] = false
+        }
+    }
+    println(list2)
 
 }
 
@@ -49,7 +56,7 @@ fun first() {
 
 fun second() {
     print("Enter Integer")
-    var score:Int = readLine()!!.toInt()
+    var score: Int = readLine()!!.toInt()
 
     when (score) {
         in 80..90 -> println('A')
@@ -61,6 +68,8 @@ fun second() {
 
 }
 
+// 3번 문제
+
 fun third() {
     print("Enter you number")
     var numberOfYour: Int = readLine()!!.toInt()
@@ -71,6 +80,16 @@ fun third() {
     println(sum1 + sum2)
 
 
-
 }
 
+// 4번 문제
+
+fun fourth() {
+    for (j in 2..9) {
+        println("--$j 단 시작--")
+        for (k in 1..9) {
+            println("$j X $k = " + j * k)
+        }
+    }
+
+}
