@@ -1,3 +1,5 @@
+import kotlin.math.abs
+
 // 1번 문제
 /* list를 두개 만든다
 첫번째 list에는 0부터 9까지 값을 넣는다 (초기값이 아닌 반복문 사용해서 값을 넣음)
@@ -22,23 +24,53 @@
 // 1번 문제
 
 fun main(array: Array<String>) {
-    val first = mutableListOf<Int>()
-    for (a in 0..9 ) {
-        first.add(a)
+    first()
+    second()
+    third()
+}
 
+
+fun first() {
+    val list1 = MutableList(9, { 0 })
+    val list2 = MutableList(9, {true})
+
+    for (i in 1..9) {
+        list1[i - 1] = i
     }
-    println(first)
-
-    val second = mutableListOf<Boolean>()
- 
 
 
 
-
-
-    println(second)
+    println(list1)
 
 
 }
 
+// 2번 문제
+
+fun second() {
+    print("Enter Integer")
+    var score:Int = readLine()!!.toInt()
+
+    when (score) {
+        in 80..90 -> println('A')
+        in 70..79 -> println('B')
+        in 60..69 -> println('C')
+        else -> println('F')
+    }
+
+
+}
+
+fun third() {
+    print("Enter you number")
+    var numberOfYour: Int = readLine()!!.toInt()
+
+    val sum1 = numberOfYour / 10
+    val sum2 = numberOfYour % 10
+
+    println(sum1 + sum2)
+
+
+
+}
 
