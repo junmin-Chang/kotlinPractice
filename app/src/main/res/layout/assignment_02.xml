@@ -69,6 +69,6 @@
         android:layout_centerVertical="true"
         android:layout_toRightOf="@id/view1"
         android:background="#000000" />
-    
+
 
 </RelativeLayout>
