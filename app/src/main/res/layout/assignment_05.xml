@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="YouTube"
+            android:textColor="#ffffff"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CAC7C7"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:background="#CAC7C7"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtube1"/>
+
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:background="#CAC7C7"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtube2"/>
+
+
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:background="#CAC7C7"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtube3"/>
+
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:background="#CAC7C7"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtube4"/>
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:background="#CAC7C7"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtube5"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
