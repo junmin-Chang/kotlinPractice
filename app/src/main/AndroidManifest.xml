@@ -9,12 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".assignment_06">
 
 
-
-
-
-        <activity android:name=".Listener">
 
 
             <intent-filter>
@@ -25,14 +22,10 @@
 
 
         </activity>
-
-
-
-
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".Listener">
 
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

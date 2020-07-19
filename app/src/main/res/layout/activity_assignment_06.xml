@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assignment_06"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <TextView
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#009688"/>
+
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:id="@+id/number3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:id="@+id/CA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CA"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="#FF0000"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <TextView
+                android:id="@+id/number4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:id="@+id/number5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+
+            <TextView
+                android:id="@+id/number6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+
+            <TextView
+                android:id="@+id/plus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"
+                android:background="#FF0000"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+
+            <TextView
+                android:id="@+id/number7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+
+            <TextView
+                android:id="@+id/number8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+
+            <TextView
+                android:id="@+id/number9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
+
+
+
+            <TextView
+                android:id="@+id/number0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
