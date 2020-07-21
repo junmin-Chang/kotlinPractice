@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/result_intent"
+        android:id="@+id/result"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="result"/>
