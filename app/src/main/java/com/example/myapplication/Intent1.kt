@@ -14,8 +14,23 @@ class Intent1 : AppCompatActivity() {
 
 
         change_activity.setOnClickListener {
-            val intent = Intent(this@Intent1, Intent2::class.java)
-            startActivity(intent)
+//            val intent = Intent(this@Intent1, Intent2::class.java)
+//
+//            // key value method -> Key - Value를 쌍으로 만들어 저장한다. -> Dictionary
+//            intent.putExtra("number1", 1)
+//            intent.putExtra("number2", 2)
+//            startActivity(intent)
+
+
+
+            val intent2 = Intent(this@Intent1, Intent2::class.java)
+
+            // Apply ->
+            intent2.apply {
+                this.putExtra("number1", 1)
+                this.putExtra("number2", 13)
+                startActivity(intent2)
+            }
         }
     }
 }
