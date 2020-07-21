@@ -26,7 +26,6 @@ class Intent2 : AppCompatActivity() {
             val resultIntent = Intent()
             resultIntent.putExtra("result", result)
 
-
             setResult(Activity.RESULT_OK, resultIntent)
             finish() // -> activity 종료
 

@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,16 +24,21 @@ class Intent1 : AppCompatActivity() {
 //            startActivity(intent)
 
 
+//
+//            val intent2 = Intent(this@Intent1, Intent2::class.java)
+//
+//            // Apply ->
+//            intent2.apply {
+//                this.putExtra("number1", 1)
+//                this.putExtra("number2", 13)
+//
+//            }
+//            startActivityForResult(intent2, 200)
 
-            val intent2 = Intent(this@Intent1, Intent2::class.java)
+            // 암시적 Intent
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"))
+            startActivity(intent)
 
-            // Apply ->
-            intent2.apply {
-                this.putExtra("number1", 1)
-                this.putExtra("number2", 13)
-
-            }
-            startActivityForResult(intent2, 200)
         }
     }
 
