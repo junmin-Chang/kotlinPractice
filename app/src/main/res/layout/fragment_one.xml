@@ -4,4 +4,11 @@
     android:layout_height="match_parent"
     android:background="#03A9F4">
 
+
+    <Button
+        android:id="@+id/pass"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="pass"/>
+
 </LinearLayout>

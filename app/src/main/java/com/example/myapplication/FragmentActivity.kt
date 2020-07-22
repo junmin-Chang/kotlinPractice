@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_fragment.*
 
-class FragmentActivity : AppCompatActivity() {
-
+class FragmentActivity : AppCompatActivity(), FragmentOne.onDataPassListener {
+    override fun onDataPass(data: String?) {
+        Log.d("pass", "" + data)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +17,7 @@ class FragmentActivity : AppCompatActivity() {
         Log.d("Life_Cycle", "onCreate")
 
 
-        val fragmentOne: FragmentOne = FragmentOne() 
+        val fragmentOne: FragmentOne = FragmentOne()
 
         // 프라그먼트에 data를 넣어주는 방법
         val bundle: Bundle = Bundle()
