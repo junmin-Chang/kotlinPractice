@@ -16,17 +16,23 @@
         android:textSize="50dp"/>
 
 
-   <fragment
-       android:id="@+id/fragment_one"
-       android:name="FragmentOne"
-       android:layout_width="match_parent"
-       android:layout_height="300dp"/>
+<!--   <fragment-->
+<!--       android:id="@+id/fragment_one"-->
+<!--       android:name="FragmentOne"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="300dp"/>-->
 
     <Button
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="come on!"/>
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get out!"/>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -15,9 +15,17 @@ class FragmentActivity : AppCompatActivity() {
         Log.d("Life_Cycle", "onCreate")
 
 
+        val fragmentOne: FragmentOne = FragmentOne() 
+
+        // 프라그먼트에 data를 넣어주는 방법
+        val bundle: Bundle = Bundle()
+        bundle.putString("hello", "Hello")
+        fragmentOne.arguments = bundle
+
+
         Button.setOnClickListener {
             // 프라그먼트를 동적으로 작동하는 방법
-            val fragmentOne : FragmentOne = FragmentOne()
+
             val fragmentManager = supportFragmentManager
 
 
@@ -31,8 +39,17 @@ class FragmentActivity : AppCompatActivity() {
             // commit   ->  시간 될 때 해(좀더 안정적)
             // commitnow    -> 지금 당장해
         }
-    }
 
+
+        Button2.setOnClickListener {
+
+            // 프라그먼트 remove/ detach 하는 방
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction2 = fragmentManager.beginTransaction()
+            fragmentTransaction2.detach(fragmentOne)
+            fragmentTransaction2.commit()
+        }
+    }
 
 
     override fun onStart() {
