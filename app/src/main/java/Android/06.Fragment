@@ -25,3 +25,8 @@ Fragment
 Fragment
 - 라이프 사이클이 존재한다.
 - 액티비티 종속적이다
+
+
+사용방법
+-XML에 viewcomponent로 추가한다
+- 코드로(동적)으로 추가한다.
