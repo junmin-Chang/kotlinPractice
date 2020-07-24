@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
-        <activity android:name=".Resource">
+        <activity android:name=".LibraryActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,10 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NullSafety">
+        <activity android:name=".ThreadActivity">
 
         </activity>
-        <activity android:name=".FragmentActivity"></activity>
+        <activity android:name=".Context"></activity>
+        <activity android:name=".Resource" />
+        <activity android:name=".NullSafety" />
+        <activity android:name=".FragmentActivity" />
         <activity android:name=".HomePage" />
         <activity android:name=".Intent2" />
         <activity android:name=".Intent1" />
