@@ -37,6 +37,7 @@ class RecyclerViewAdapter(
     val inflater: LayoutInflater
 
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         val carName: TextView?
         val carEngine: TextView?
